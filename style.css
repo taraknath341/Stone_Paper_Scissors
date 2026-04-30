@@ -1,0 +1,175 @@
+:root {
+  --theme-color: orange;
+  --background-color: #212121;
+}
+
+* {
+  font-family: Ubuntu;
+  transition: 0.5s;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--theme-color);
+}
+
+#game-body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 7px dotted var(--theme-color);
+  border-radius: 2pc;
+  background-color: #323232;
+  width: 25pc;
+  height: 25pc;
+  align-content: center;
+  align-items: center;
+}
+
+.companyName {
+  transition: 0.5s;
+  font-size: 1.3pc;
+}
+
+.gameName {
+  transition: 0.5s;
+  font-size: 3pc;
+}
+
+.play {
+  background-color: transparent;
+  color: var(--theme-color);
+  height: 5pc;
+  width: 8pc;
+  font-size: 3pc;
+  border: 2px groove var(--theme-color);
+}
+
+.play:hover {
+  transform: rotate(30deg);
+}
+
+.settings {
+  background-color: transparent;
+  color: var(--theme-color);
+  height: 2.5pc;
+  width: 2.5pc;
+  font-size: 4pc;
+  border-style: none;
+  position: absolute;
+  right: 2pc;
+  /* top: 0; */
+}
+
+.avater-button {
+  height: 10pc;
+  overflow-y: scroll;
+  scrollbar-color: var(--theme-color) #eee;
+}
+
+/* scrollbar width */
+.avater-button::-webkit-scrollbar {
+  width: 10px;
+}
+
+.avater-button button {
+  background-color: transparent;
+  font-size: 2pc;
+  margin: 1px;
+  border: 1px solid var(--theme-color);
+}
+
+.select {
+  background: radial-gradient(#00000000 2pc, var(--theme-color));
+  border: none;
+  height: 7pc;
+  width: 7pc;
+  font-size: 2pc;
+  border-radius: 2pc;
+}
+
+.select:hover {
+  transform: rotatex(50deg);
+}
+
+.hidden {
+  color: #00000000;
+}
+
+.player-box {
+  position: relative;
+  font-size: 1.5pc;
+  height: 7pc;
+  width: 7pc;
+  background: radial-gradient(#00000000 3pc, var(--theme-color));
+  color: var(--theme-color)fffea;
+  border-radius: 1pc 1pc 5pc 5pc;
+  border-style: none;
+}
+
+.player-box .player {
+  position: absolute;
+  left: .5pc;
+  font-size: 1.7pc;
+  top: .5pc;
+}
+
+.btn {
+  height: 2.7pc;
+  width: 8pc;
+  background-color: transparent;
+  color: var(--theme-color);
+  border-style: none;
+  border-top: 2px solid var(--theme-color);
+  border-left: 2px solid var(--theme-color);
+  font-size: 1.3pc;
+  margin: 0 1pc;
+}
+
+.btn:hover {
+  border-style: none;
+  border-bottom: 2px solid var(--theme-color);
+  border-right: 2px solid var(--theme-color);
+}
+
+.score,
+.avater-preview {
+  padding: .5pc;
+  position: absolute;
+  font-size: 1.5pc;
+  border-top: 2px solid var(--theme-color);
+}
+
+.score[name=user],
+.avater-preview {
+  top: 0;
+  left: 1pc;
+}
+
+.score[name=computer] {
+  top: 0;
+  right: 1pc;
+}
+
+/* Mobile Design */
+@media (max-width: 430px) {
+  #game-body {
+    zoom: 85%;
+  }
+}
+
+
+@media (max-width: 350px) {
+  #game-body {
+    zoom: 70%;
+  }
+}
+
+@media (max-width: 300px) {
+  #game-body {
+    zoom: 65%;
+  }
+}
