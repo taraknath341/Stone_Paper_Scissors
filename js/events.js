@@ -8,10 +8,9 @@
 
 /**
  * Question: এই প্রোজেক্ট এ এই ফাইল টা কী কাজ করছে ?
- * Answers: এর কাজ হল ইভেন্ট হ্যান্ডল করা innerHTML use করে client Side Rendering করলে addEventListen রিমুভ হয়ে যায় ,
- *    বার বার addEventListen use করলে মেমোরি লিক হয়।  তাই উক্ত ফাইলের ভিতরে প্রত্যেকটা child এর অ্যাড ইভেন্ট litener না
- *    use করে এর প্যারেন্ট element কে ক্লিক ইভেন্ট দিয়েছি এবং clild element কে নিয়ন্ত্রণ করছি। 
- *    এটা use করার ফলে Client Side Rendering with Memory ম্যানেজমেন্ট ।
+ * Answers: এর কাজ হল ইভেন্ট হ্যান্ডল করা innerHTML use করে client Side Rendering করলে addEventListener রিমুভ হয়ে যায়,
+ *    বার বার addEventListener use করলে memory লিক হয়। তাই এই ফাইলের ভিতরে প্রত্যেকটা child এর addEventListener না
+ *    use করে এর প্যারেন্ট element কে ক্লিক ইভেন্ট দিয়েছি এবং clild element কে নিয়ন্ত্রণ করছি।
  */
 
 game_body.onclick = e => {
