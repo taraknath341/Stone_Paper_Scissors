@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://taraknath341.codeberg.page/stone-paper-scissors">
-    <img src="https://img.shields.io/badge/🌍-Preview-orange?style=for-the-badge" width="333">
+    <img src="https://img.shields.io/badge/🌍-Preview-orange?style=for-the-badge" width="250">
   </a>
 </p>
 
